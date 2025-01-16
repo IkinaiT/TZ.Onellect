@@ -1,0 +1,6 @@
+@TZ.Onelect.TestServer_HostAddress = http://localhost:5041
+
+GET {{TZ.Onelect.TestServer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
