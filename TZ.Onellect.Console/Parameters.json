@@ -4,5 +4,5 @@
       "Default": "Warning"
     }
   },
-  "SendTo": "https://localhost:7012/SendArray"
+  "SendTo": "http://localhost:5041/SendArray"
 }

@@ -51,9 +51,8 @@ if (!string.IsNullOrEmpty(strConnection))
     try
     {
         var responce = await strConnection
-        .PostJsonAsync(methodResult)
-        .ReceiveString();
-
+            .PostJsonAsync(methodResult.ToArray());
+         
         Console.WriteLine($"Responce: {responce}");
     }
     catch (Exception ex)

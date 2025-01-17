@@ -6,12 +6,14 @@ namespace TZ.Onelect.TestServer.Controllers
     public class HomeController : ControllerBase
     {
         [HttpPost("/SendArray")]
-        public void SendArray(List<int> array)
+        public IActionResult SendArray([FromBody]List<int> array)
         {
             foreach (var item in array)
             {
                 Console.Write(item + " ");
             }
+
+            return Ok("Correct");
         }
     }
 }
